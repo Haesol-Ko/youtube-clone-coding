@@ -1,0 +1,61 @@
+.container {
+    width: 50%;
+    padding: 0.2rem;
+}
+
+.video:hover {
+    transform: scale(1.01);
+}
+
+.video {
+    display: flex;
+    align-items: center; /* 🌟 섬네일 가로세로가 바로 맞아버리네..? */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.1s ease-in;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 500px) {
+    .video {
+        width: 100%;
+    }
+}
+
+.thumbnail {
+    width: 40%;
+    height: 100%;
+}
+
+.metadata {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+    margin: 0;
+}
+
+.title,
+.channel {
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* 라인수 */
+    -webkit-box-orient: vertical;
+    word-wrap:break-word;
+    line-height: 1.2em;
+    height: 2.4em;
+}
+
+.video-mode .title {
+    -webkit-line-clamp: 1; /* 라인수 */
+    line-height: 1.2em;
+    height: 1.2em;
+}
+
+.channel {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 0.8rem;
+}
