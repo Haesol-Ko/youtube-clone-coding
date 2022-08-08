@@ -33,8 +33,8 @@ const SearchHeader = memo(({onSearch}) => {
                 onKeyPress={onKeyPress}/>
                 <button
                     type="submit"
-                    onClick={onClick}
-                    ><i className="fa-solid fa-magnifying-glass"></i>
+                    onClick={onClick}>
+                    <i className="fa-solid fa-magnifying-glass"></i>
                 </button>
         </header>
     )
