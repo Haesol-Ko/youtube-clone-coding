@@ -1,0 +1,7 @@
+.detail {
+    padding: 0.2em;
+}
+
+.description {
+    white-space: pre-wrap; /* pre 태그 줄바꿈 */
+}
